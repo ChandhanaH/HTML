@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Form 2</title>
+    <style>
+       .one{
+        width: 40%;
+        background-color: aqua;
+        border: 3px ridge red;
+        border-radius: 10px;
+        margin-left: 300px;
+
+       }
+       .two{
+        color: brown;
+        font-family: cursive;
+       }
+       .three{
+        border: 2px solid red;
+       }
+       .four{
+        font-size: 20px;
+        color: darkgreen;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       }
+       #six{
+        margin-left: 300px;
+        color: darkblue;
+        background-color: gray;
+       }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset class="one">
+            <legend class="four">Personal Details</legend> 
+
+        <label for="fname" class="two">First Name</label>
+        <input type="text" class="three"  id="fname" name="fname" required="fname">
+        <br><br>
+        <label for="mname" class="two">Middle Name</label>
+        <input type="text" class="three" id="mname" name="mname">
+        <br><br>
+        <label for="lname" class="two">Last Name</label>
+        <input type="text" class="three" id="lname" name="lname" required="lname">
+        <br><br>
+        <label for="email" class="two">Email</label>
+        <input type="email" class="three" id="email" name="email" required="email">
+        <br><br>
+        <label for="dob" class="two">DOB</label>
+        <input type="date" class="three" id="dob" name="dob" required="dob">
+    
+    </fieldset>
+    <fieldset class="one">
+        <legend class="four">Educational Details</legend>
+        <label for="dept" class="two">Department</label>
+        <br>
+
+        <input type="radio" class="three" id="cs" name="dept">
+        <label for="">CSE</label>
+
+        <input type="radio" class="three" id="ec" name="dept">
+        <label for="">ECE</label>
+
+        <input type="radio" id="ee"  class="three" name="dept">
+        <label for="">EEE</label>
+        <br><br>
+
+        <label for="yog" class="two">YOG</label>
+       
+        <select name="yog" class="three" id="yog">
+            <option></option> 
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+        </select>
+
+        <br>
+        <label for="skill" class="two">Skills</label>
+        <br>
+
+        <input type="checkbox" class="three" id="java" name="skill">
+        <label for="">JAVA</label>
+        <br>
+        <input type="checkbox" id="python" class="three" name="skill">
+        <label for="">PYTHON</label>
+        <br>
+        <input type="checkbox" id="dbms" class="three" name="skill">
+        <label for="">DBMS</label>
+    </fieldset>
+
+
+    </form>
+    <br>
+        <input type="submit" id="six" >
+    
+</body>
+</html>
